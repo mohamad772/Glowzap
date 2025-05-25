@@ -8,47 +8,49 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #fefefe, #f2f6ff);
+      background-color: #f8f9fd;
       color: #222;
     }
     header {
-      background-color: #ffffffcc;
+      background-color: #fff;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 50px 20px;
-      background-image: url('https://images.unsplash.com/photo-1556228453-efd4bfe0a4b7?auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
-      color: #000;
+      padding: 60px 20px;
+      background: url('https://images.pexels.com/photos/3762876/pexels-photo-3762876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+      color: #fff;
     }
     .hero h1 {
       font-size: 3em;
-      margin-bottom: 10px;
-      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 3px #000;
     }
     .hero p {
       font-size: 1.2em;
       margin-bottom: 30px;
-      color: #333;
-      background: rgba(255, 255, 255, 0.7);
+      background-color: rgba(0,0,0,0.4);
       padding: 10px 20px;
       border-radius: 10px;
     }
     .product-image {
-      width: 300px;
+      width: 320px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin: 20px 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
     .price {
       font-size: 1.8em;
-      margin: 25px 0;
+      margin: 20px 0;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #000;
     }
     .old-price {
       text-decoration: line-through;
@@ -61,20 +63,22 @@
       padding: 15px 30px;
       font-size: 1.1em;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       transition: background 0.3s;
     }
     .buy-button:hover {
       background: #00a85c;
     }
     .stock-warning {
-      color: #d10000;
+      color: #ffd700;
       font-weight: bold;
       margin-top: 15px;
+      text-shadow: 1px 1px 3px #000;
     }
     .features, .testimonials {
       padding: 60px 20px;
       text-align: center;
+      background-color: #fff;
     }
     .features h2, .testimonials h2 {
       font-size: 2.5em;
@@ -93,7 +97,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin: 10px;
+      margin: 15px;
     }
     footer {
       background: #222;
@@ -110,7 +114,7 @@
   <section class="hero">
     <h1>Deep Pore Cleaner Vacuum</h1>
     <p>Reveal your glow with our best-selling skin vacuum</p>
-    <img class="product-image" src="https://m.media-amazon.com/images/I/61TD5JLGhUL._AC_SL1500_.jpg" alt="Deep Pore Cleaner" />
+    <img class="product-image" src="https://images.pexels.com/photos/6621460/pexels-photo-6621460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Deep Pore Cleaner" />
     <div class="price">
       <span class="old-price">$57.99</span><span>$34.99</span>
     </div>
@@ -130,8 +134,8 @@
 
   <section class="testimonials">
     <h2>Customer Love</h2>
-    <img class="testimonial-img" src="https://images.unsplash.com/photo-1603575448362-800f3e06f44e?auto=format&fit=crop&w=400&q=80" alt="testimonial 1" />
-    <img class="testimonial-img" src="https://images.unsplash.com/photo-1614280381328-7de85e5e1b2e?auto=format&fit=crop&w=400&q=80" alt="testimonial 2" />
+    <img class="testimonial-img" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="testimonial 1" />
+    <img class="testimonial-img" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="testimonial 2" />
     <p>"My skin has never felt this clean. Totally worth it!" – Emily R.</p>
     <p>"Looks sleek and works better than expected. I use it every week." – Omar J.</p>
   </section>
