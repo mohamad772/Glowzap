@@ -3,94 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GlowZap | Deep Pore Cleaner Vacuum</title>
+  <title>GlowZap | The Ultimate Skin Vacuum</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fd;
-      color: #222;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #faf6f0;
+      color: #1a1a1a;
     }
     header {
-      background-color: #fff;
-      padding: 20px;
+      background: #000;
+      color: #fff;
+      padding: 25px 0;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 2em;
+      letter-spacing: 2px;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 60px 20px;
+      padding: 80px 20px;
       background: url('https://images.pexels.com/photos/3762876/pexels-photo-3762876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
       color: #fff;
     }
     .hero h1 {
-      font-size: 3em;
+      font-size: 3.5em;
       margin-bottom: 15px;
-      text-shadow: 1px 1px 3px #000;
+      text-shadow: 2px 2px 6px #000;
     }
     .hero p {
-      font-size: 1.2em;
+      font-size: 1.4em;
+      max-width: 600px;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 25px;
+      border-radius: 12px;
       margin-bottom: 30px;
-      background-color: rgba(0,0,0,0.4);
-      padding: 10px 20px;
-      border-radius: 10px;
     }
     .product-image {
       width: 320px;
-      border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      margin: 25px 0;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
     .price {
-      font-size: 1.8em;
-      margin: 20px 0;
+      font-size: 2em;
       background: #fff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      color: #000;
+      padding: 12px 28px;
+      border-radius: 10px;
+      color: #222;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
     }
     .old-price {
       text-decoration: line-through;
       color: red;
-      margin-right: 10px;
+      font-weight: 500;
     }
     .buy-button {
-      background: #00c86f;
+      background: #ff3c83;
       color: #fff;
-      padding: 15px 30px;
-      font-size: 1.1em;
+      padding: 15px 35px;
+      font-size: 1.2em;
+      border-radius: 50px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
     }
     .buy-button:hover {
-      background: #00a85c;
+      background: #e7296e;
     }
     .stock-warning {
       color: #ffd700;
       font-weight: bold;
-      margin-top: 15px;
-      text-shadow: 1px 1px 3px #000;
+      margin-top: 20px;
+      text-shadow: 1px 1px 4px #000;
     }
-    .features, .testimonials {
-      padding: 60px 20px;
+    section.features, section.testimonials {
+      padding: 80px 20px;
+      background: #fff;
       text-align: center;
-      background-color: #fff;
     }
     .features h2, .testimonials h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 2.8em;
+      margin-bottom: 30px;
     }
     .features ul {
       list-style: none;
       padding: 0;
       font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
     }
     .features li {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
     .testimonial-img {
       width: 120px;
@@ -98,46 +112,51 @@
       border-radius: 50%;
       object-fit: cover;
       margin: 15px;
+      border: 4px solid #ff3c83;
     }
     footer {
-      background: #222;
+      background: #000;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      font-size: 0.9em;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>GlowZap</h1>
+    GlowZap
   </header>
+
   <section class="hero">
-    <h1>Deep Pore Cleaner Vacuum</h1>
-    <p>Reveal your glow with our best-selling skin vacuum</p>
+    <h1>Glow Like Never Before</h1>
+    <p>Reveal flawless skin with the #1 deep pore vacuum used by skincare lovers worldwide</p>
     <img class="product-image" src="https://images.pexels.com/photos/6621460/pexels-photo-6621460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Deep Pore Cleaner" />
     <div class="price">
-      <span class="old-price">$57.99</span><span>$34.99</span>
+      <span class="old-price">$57.99</span>
+      <span>$34.99</span>
     </div>
-    <a class="buy-button" href="https://wa.me/00000000000?text=Hi%2C%20I%20want%20to%20order%20the%20Deep%20Pore%20Cleaner%20Vacuum%20from%20GlowZap.%20Can%20you%20help%20me%3F" target="_blank">Order via WhatsApp</a>
-    <div class="stock-warning">⚠️ Only a few units left in stock!</div>
+    <a class="buy-button" href="https://wa.me/00000000000?text=Hi%2C%20I%20want%20to%20order%20the%20Deep%20Pore%20Cleaner%20Vacuum%20from%20GlowZap." target="_blank">Order via WhatsApp</a>
+    <div class="stock-warning">⚠️ Limited stock available – grab yours now!</div>
   </section>
 
   <section class="features">
-    <h2>Why You'll Love It</h2>
+    <h2>Why GlowZap?</h2>
     <ul>
-      <li>✔ Powerful suction removes blackheads instantly</li>
-      <li>✔ Enhances skin brightness and texture</li>
-      <li>✔ USB rechargeable – sleek & portable</li>
-      <li>✔ Gentle and safe for all skin types</li>
+      <li>✨ Instantly removes blackheads and dead skin</li>
+      <li>✨ Safe for all skin types and completely painless</li>
+      <li>✨ USB rechargeable and easy to carry</li>
+      <li>✨ Trusted by over 40,000 happy customers</li>
     </ul>
   </section>
 
   <section class="testimonials">
-    <h2>Customer Love</h2>
+    <h2>Real Reviews</h2>
     <img class="testimonial-img" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="testimonial 1" />
     <img class="testimonial-img" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="testimonial 2" />
-    <p>"My skin has never felt this clean. Totally worth it!" – Emily R.</p>
-    <p>"Looks sleek and works better than expected. I use it every week." – Omar J.</p>
+    <p>"I’m obsessed! My skin has literally transformed after using GlowZap!" – Leila A.</p>
+    <p>"Works even better than I imagined. I use it before makeup now!" – Mark D.</p>
   </section>
 
   <footer>
